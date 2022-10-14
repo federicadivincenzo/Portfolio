@@ -1,0 +1,18 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+}
+
+.tab {
+  padding: 12px;
+  margin: 8px;
+  opacity: .4;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tabs-underlined .tab-underlined.active {
+  opacity: 1;
+}
