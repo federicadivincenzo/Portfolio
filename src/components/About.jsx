@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <>
-      <div className="mx-auto max-w-7xl px-2 min-h-screen sm:px-6 lg:px-8 bg-slate-800 text-white flex items-center justify-center">
+      <div id="about" className="mx-auto max-w-7xl px-2 min-h-screen sm:px-6 lg:px-8 bg-slate-800 text-white flex items-center justify-center">
         <div className="w-2/3">
           <p className="text-sm text-violet-400 underline-offset-4 font-semibold mb-6">.aboutMe()</p>
           <p className="w-5/6 leading-loose mb-4 text-slate-300 text-base">

@@ -3,10 +3,10 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: '.hello()', href: '#', current: true },
-  { name: '.aboutMe()', href: '#', current: false },
-  { name: '.myProjects()', href: '#', current: false },
-  { name: '.contactMe()', href: '#', current: false },
+  { name: '.hello()', href: '#hero', current: false },
+  { name: '.aboutMe()', href: '#about', current: false },
+  { name: '.myProjects()', href: '#work', current: false },
+  { name: '.contactMe()', href: '#contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -15,10 +15,10 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-800 sticky top-0 z-10">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8  ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -33,16 +33,7 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Federica Di Vincenzo"
-                  />
-                  <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Federica Di Vincenzo"
-                  />
+                  <h1 className='font-bold text-2xl text-violet-400'><a href="#hero">./Fdv</a></h1>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">

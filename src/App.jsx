@@ -5,17 +5,19 @@ import Hero from "./components/Hero"
 import About from "./components/About"
 import Experience from "./components/Experience"
 import Work from "./components/Work"
+import Contact from "./components/Contact"
 
 import './App.css'
 
 function App() {
   return (
-    <div className="bg-slate-800">
+    <div className="bg-slate-800 scroll-smooth">
       <Navbar />
       <Hero />
       <About />
       <Experience />
       <Work />
+      <Contact />
     </div>
   )
 
