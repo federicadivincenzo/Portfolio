@@ -29,7 +29,7 @@ export default function Experience() {
           }
         } else if (e.target.innerText === 'Le Wagon') {
           return {
-            title:'Teacher',
+            title:'Web Developer Teacher Assistant',
             company: 'Le Wagon',
             date: 'From 2022 to Present',
             bullet1: 'Provide support and assistance to students and small groups to help them better understand the content and help them to complete assignments.',
